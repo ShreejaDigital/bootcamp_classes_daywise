@@ -3,9 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <title>Shreeja Bootcamp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/80777307e8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="/" class="navbar-logo"> Shopify </a>
+
+          <div class="navbar-links">
+            <a href="/products" class="navbar-link"> Products </a>
+
+            <a href="/cart" class="navbar-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="hero-section">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-starting">
+            Starting At <span class="hero-price">$999</span>
+          </p>
+          <h2 class="hero-title">The best notebook collection 2024</h2>
+          <h3 class="hero-subtitle">
+            Exclusive offer <span class="hero-discount">-10%</span> off this
+            week
+          </h3>
+          <a href="/product/79" class="hero-btn" data-test="hero-btn">
+            Shop Now
+          </a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero.png" alt="hero" />
+        </div>
+      </div>
+    </div>
+    <!-- feature-card section -->
+    <section>
+      <div class="features-container">
+        <div class="feature-card">
+          <i class="fa-solid fa-truck"></i>
+          <div class="feature-text">
+            <h2 class="feature-title">Free Delivery</h2>
+            <p class="feature-desc">Orders from all items</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-rotate-left"></i>
+          <div class="feature-text">
+            <h2 class="feature-title">Return & Refund</h2>
+            <p class="feature-desc">Money back guarantee</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-percent"></i>
+          <div class="feature-text">
+            <h2 class="feature-title">Member Discount</h2>
+            <p class="feature-desc">On order over $99</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-headset"></i>
+          <div class="feature-text">
+            <h2 class="feature-title">Support 24/7</h2>
+            <p class="feature-desc">Contact us 24 hours a day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Card Section -->
+    <div class="product-list-container">
+      <div class="product-list-grid">
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/perform2.jpg"
+                alt="Powder Canister"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Beauty</p>
+            <a href="#" class="product-card-title"> Powder Canister </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-count">4.64</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$13.51</span>
+              <span class="original-price">$24.99</span>
+              <span class="discount">9.84%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/hero.png"
+                alt="Premium Notebook"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Electronics</p>
+            <a href="#" class="product-card-title"> Premium Notebook </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-count">4.95</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$999.00</span>
+              <span class="original-price">$1199.00</span>
+              <span class="discount">16.7%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/perform2.jpg"
+                alt="Wireless Headphones"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Audio</p>
+            <a href="#" class="product-card-title"> Wireless Headphones </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-count">4.32</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$89.99</span>
+              <span class="original-price">$129.99</span>
+              <span class="discount">30.8%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/hero.png"
+                alt="Smart Watch"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Wearables</p>
+            <a href="#" class="product-card-title"> Smart Watch Pro </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-count">4.88</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$299.99</span>
+              <span class="original-price">$399.99</span>
+              <span class="discount">25.0%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/perform2.jpg"
+                alt="Gaming Mouse"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Gaming</p>
+            <a href="#" class="product-card-title"> Gaming Mouse RGB </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-count">4.56</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$49.99</span>
+              <span class="original-price">$79.99</span>
+              <span class="discount">37.5%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img">
+            <a href="#">
+              <img
+                src="/assets/hero.png"
+                alt="Bluetooth Speaker"
+                class="product-card-image"
+              />
+            </a>
+          </div>
+
+          <div class="product-card-info">
+            <p class="product-card-category">Audio</p>
+            <a href="#" class="product-card-title"> Bluetooth Speaker </a>
+          </div>
+
+          <div class="product-card-rating">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-count">4.21</span>
+            </div>
+          </div>
+
+          <div class="product-card-bottom">
+            <div class="price-section">
+              <span class="current-price">$39.99</span>
+              <span class="original-price">$59.99</span>
+              <span class="discount">33.3%</span>
+            </div>
+
+            <button class="product-card-add-btn" title="ADD TO CART">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <h3 class="footer-logo">Shopify</h3>
+            <p class="footer-description">
+              Your one-stop destination for the best notebook collection.
+              Quality products with exclusive offers and fast delivery.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="/" class="footer-link">Home</a>
+              </li>
+              <li>
+                <a href="/products" class="footer-link">Products</a>
+              </li>
+              <li>
+                <a href="/cart" class="footer-link">Cart</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="footer-section">
+            <h4 class="footer-title">Customer Service</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Shipping Info</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Returns & Refunds</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h4 class="footer-title">Contact Info</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope footer-contact-icon"></i>
+                <span>support@shopify.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone footer-contact-icon"></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2024 Shopify. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            <a href="#" class="footer-bottom-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
