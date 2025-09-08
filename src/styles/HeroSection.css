@@ -1,0 +1,89 @@
+.hero-section {
+  background-color: #e3edf6;
+  font-family: "Lora", serif;
+  padding: 0;
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    padding: 0 2rem;
+  }
+}
+
+.hero-container {
+  max-width: 1440px;
+  display: grid;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hero-left-outer {
+  display: flex;
+  align-items: center;
+}
+
+.hero-left-inner {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-starting {
+  color: black;
+}
+
+.hero-price {
+  font-weight: bold;
+}
+
+.hero-title {
+  color: black;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem; /* text-5xl */
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.5rem; /* text-2xl */
+  color: black;
+}
+
+.hero-discount {
+  color: #dc2626; /* red-600 */
+  font-weight: bold;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.hero-btn:hover {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+}
+
+.hero-right img {
+  display: block;
+  margin-left: auto;
+  max-width: 100%;
+}
